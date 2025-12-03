@@ -7,12 +7,14 @@ This challenge examines the relationship between legal gender gaps and women's e
 
 ## Team Members
 
-- Anna Zhang
-- John Smith
-- Prema Myhren
+
 - Upasana Pattnaik
 - Kushal Mohnot
 - Max Calzada
+- Lilian Mkandla
+- Upasana Pattnaik
+- Justin Mezetin
+- Alanna Hazlett
 
 
 ## Challenge Category Area
