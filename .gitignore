@@ -1,2 +1,29 @@
+# Data files
 *.duckdb
 *.csv
+
+# Quarto generated files
+_quarto.yml
+index.qmd
+/.quarto/
+docs/
+_site/
+*_files/
+
+# Converted notebooks (generated from Jupytext .py files)
+Team_Projects/**/*.qmd
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

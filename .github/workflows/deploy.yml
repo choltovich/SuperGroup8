@@ -6,23 +6,45 @@ on:
   pull_request:
     branches: [ main ]
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.4.555"
 
       - name: Setup UV
         uses: astral-sh/setup-uv@v3
         with:
           python-version: '3.12'
 
-      - name: Build site with Python
+      - name: Install dependencies
         run: |
           uv venv
-          uv pip install markdown
+          uv pip install jupytext
+
+      - name: Build site with Quarto
+        run: |
           uv run python .github/workflows/build.py
 
       - name: Setup Pages
