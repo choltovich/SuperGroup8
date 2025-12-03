@@ -10,8 +10,19 @@ Examples:
 ## Team Members
 
 - Chris Holt
-- 
-
+- Paloma Bernal-Turnes
+- Miguel Angel Rodriguez
+- michael tint
+- Guy Nzeribe
+- Libert Kanojerera
+- Lincoln Chanakira
+- Pamella Nyahuma
+- Francisco Rezzonico
+- Shingirai Machaka
+- Yibralem Tesfaye
+- Sandra Tombe
+- Mark Quispe
+- Fulsundar Vishal
 
 # Jobs and Youth: Challenge 8
 
