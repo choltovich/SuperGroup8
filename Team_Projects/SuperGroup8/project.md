@@ -38,14 +38,14 @@ See https://www.dc2.org/datadive for details on the challenge areas. Specify whi
 
 ## Project Description
 
-Team JobInsights built an analytical application using NextJs to visualize employment trends across different sectors and regions. The tool allows users to compare employment rates, job creation trends, and sector-specific employment data over time. 
+Around the world, over 1.2 billion young people will enter the labor force by 2030—most in developing economies where work remains informal, low-productivity, and highly vulnerable to disruption. Digitalization offers enormous potential to create new jobs, expand access, and boost innovation.
 
-Specially looking at youth data it helps track  how youth education levels (15–24) will shift by 2035 across countries and scenarios, and what this implies for future skills, gender gaps, and regional winners & who may fall behind.
+To help countries navigate this transition, Group 8 built an interactive dashboard that allows users to navigate multiple datasets including the World Bank’s Global Labor Database and the JOIN Benchmarking Tool. These datasets provide harmonized labor-market indicators—employment types, sector shifts, skills, education, formality, and wages—across countries and over time. And the dashboard’s open architecture allows the easy, automatic importing of additional data. 
 
-The application is designed to be user-friendly, with interactive visualizations that allow users to filter data by country, sector, and time period. It also includes a dashboard that provides key metrics and insights about employment trends. The filters are currently semi-functional due to time constraints but will be 
+The dashboard identifies where digital and AI job demand is rising, where supply is lagging, and which groups are being left behind. With this insight, policymakers and development teams can design targeted upskilling programs, strengthen education-to-employment pathways, and help ensure productive jobs for all.
 
 
 
 ## Links:
 
-slides.pdf
+https://youtu.be/PLBH9zlmcpY
