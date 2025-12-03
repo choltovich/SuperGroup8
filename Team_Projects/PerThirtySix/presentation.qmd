@@ -39,29 +39,14 @@ Building thoughtful, data-driven explorations.
 :::
 :::
 
-## What We Built
+## What We Built {.center}
 
-An interactive explorer combining:
-
-1. **Data table** with inline visualizations
-2. **D3.js visualizations** - Regulatory Framework vs Public Services
-3. **Custom explorer** - any metric vs any metric, colored by region or income
+::: {style="text-align: center; margin-top: 2em;"}
+An interactive explorer combining data tables, D3.js visualizations, and custom metric comparisons.
 
 All client-side, real-time, responsive.
 
-## Let's Explore {.center}
-
-::: {style="text-align: center; margin-top: 2em;"}
-### [View the Interactive Tool](https://perthirtysix.com/tool/regulatory-jobs-data-explorer)
-
-**Key features:**
-
-::: {.incremental}
-- Filter and sort countries by regulatory performance
-- Visualize relationships between governance and outcomes
-- Compare regions and income groups
-- Identify patterns and outliers
-:::
+### [Let's explore the tool →](https://perthirtysix.com/tool/regulatory-jobs-data-explorer)
 :::
 
 ## Questions? {.center}
@@ -69,7 +54,7 @@ All client-side, real-time, responsive.
 ::: {style="text-align: center; margin-top: 2em;"}
 ![Economic Inequality Distribution](chart.png){width=70%}
 
-### [Explore the tool](https://perthirtysix.com/tool/regulatory-jobs-data-explorer)
+### [perthirtysix.com/tool/regulatory-jobs-data-explorer](https://perthirtysix.com/tool/regulatory-jobs-data-explorer)
 
 Contact us via LinkedIn or our personal sites.
 :::
