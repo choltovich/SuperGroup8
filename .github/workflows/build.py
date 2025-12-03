@@ -326,27 +326,34 @@ def manual_jupytext_to_qmd(py_file: Path, output_dir: Path) -> Path | None:
 
 
 def run_quarto_render(root: Path) -> bool:
-    """Run quarto render command."""
+    """Run quarto render command with verbose output."""
     print("\nRunning Quarto render...")
+    print("=" * 60)
     
     try:
-        result = subprocess.run(
-            ["quarto", "render"],
+        # Use Popen to stream output in real-time
+        process = subprocess.Popen(
+            ["quarto", "render", "--verbose"],
             cwd=root,
-            capture_output=True,
-            text=True
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1  # Line-buffered
         )
         
-        if result.stdout:
-            print(result.stdout)
+        # Stream output line by line
+        for line in process.stdout:
+            print(line, end="", flush=True)
         
-        if result.returncode != 0:
-            print(f"Quarto render failed with exit code {result.returncode}")
-            if result.stderr:
-                print(f"Error: {result.stderr}")
+        process.wait()
+        
+        print("=" * 60)
+        
+        if process.returncode != 0:
+            print(f"\nQuarto render failed with exit code {process.returncode}")
             return False
         
-        print("Quarto render completed successfully!")
+        print("\nQuarto render completed successfully!")
         return True
         
     except FileNotFoundError:
